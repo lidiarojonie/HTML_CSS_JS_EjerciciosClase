@@ -101,3 +101,118 @@ footer {
   color: #999;
   font-size: 0.8rem;
 }
+
+/* ── Página Premium ── */
+.premium-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.premium-card .icono {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.premium-card h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.premium-card .subtitulo {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.precio {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.precio span {
+  font-size: 1rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 25px 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.features li::before {
+  content: "✓";
+  color: #4CAF50;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.btn-premium {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+  margin-bottom: 12px;
+}
+
+.btn-premium:hover {
+  background-color: #555;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.btn-volver:hover {
+  color: #555;
+}
+
+.badge-aviso {
+  padding: 10px;
+  border-left: 3px solid #f44336;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-align: left;
+}

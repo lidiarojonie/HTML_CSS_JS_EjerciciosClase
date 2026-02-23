@@ -1,4 +1,4 @@
-console.log(" JAVASCRIPT cargado correctamente ");
+console.log("JAVASCRIPT cargado correctamente");
 
 // Obtener referencias a los elementos del DOM
 const inputNum1 = document.getElementById("num1");
@@ -8,44 +8,22 @@ const btnResta = document.getElementById("btn-resta");
 const btnMultiplicar = document.getElementById("btn-multiplicar");
 const btnDividir = document.getElementById("btn-dividir");
 const resultadoP = document.querySelector(".resultado");
-const errorP = document.querySelector(".error");    
+const errorP = document.querySelector(".error");
 
-// Función para realizar la operación y mostrar el resultado
+// En vez de calcular, redirige a la página premium
 function calcular(operacion) {
-    const num1 = parseFloat(inputNum1.value);
-    const num2 = parseFloat(inputNum2.value);
-    
+    const num1 = inputNum1.value.trim();
+    const num2 = inputNum2.value.trim();
+
     // Validar que ambos inputs tengan valores válidos
-    if (isNaN(num1) || isNaN(num2) || inputNum1.value.trim() === "" || inputNum2.value.trim() === "") {
+    if (isNaN(parseFloat(num1)) || isNaN(parseFloat(num2)) || num1 === "" || num2 === "") {
         errorP.textContent = "Error: Tipo de dato no válido";
         resultadoP.textContent = "Resultado: ...";
         return;
     }
-    
-    let resultado;
-    switch (operacion) {
-        case "btnSuma":
-            resultado = num1 + num2;
-            break;
-        case "btnResta":
-            resultado = num1 - num2;
-            break;
-        case "btnMultiplicar":
-            resultado = num1 * num2;
-            break;
-        case "btnDividir":
-            if (num2 === 0) {
-                errorP.textContent = "Error: División por cero";
-                resultadoP.textContent = "Resultado: ...";
-                return;
-            }
-            resultado = num1 / num2;
-            break;
-    }
-    
-    // Si la operación fue exitosa, limpiar error y mostrar resultado
-    errorP.textContent = "Error: ...";
-    resultadoP.textContent = `Resultado: ${resultado}`;
+
+    // ¡La broma! Redirige a la página de suscripción Premium
+    window.location.href = "premium.html";
 }
 
 // Agregar event listeners a los botones
@@ -54,7 +32,7 @@ btnResta.addEventListener("click", () => calcular("btnResta"));
 btnMultiplicar.addEventListener("click", () => calcular("btnMultiplicar"));
 btnDividir.addEventListener("click", () => calcular("btnDividir"));
 
-// Opcional: Agregar validación para entradas no numéricas
+// Validación visual de entradas no numéricas
 inputNum1.addEventListener("input", () => {
     if (isNaN(inputNum1.value) && inputNum1.value.trim() !== "") {
         inputNum1.style.borderColor = "red";
