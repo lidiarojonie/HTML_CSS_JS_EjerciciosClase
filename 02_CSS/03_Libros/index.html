@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+
+    <!-- Hoja de estilos externa --> 
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <!-- Aquí iremos construyendo a página por bloques -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Biblioteca Online</h1>
+            <p class="site-subtitle">Exporta títulos por categoria</p>
+        </div>
+    </header>
+
+
+    <section class="search-bar">
+        <div class="container search-inner">
+            <label for="categoria">Selecciona una categoría:</label>
+
+            <select id="categoria" name="categoria" class="search-select">
+                <option value="">Todas</option>
+                <option value="fantasia">Fantasía</option>
+                <option value="ciencia-ficcion">Ciencia ficción</option>
+                <option value="historia">Historia</option>
+                <option value="juvenil">Juvenil</option>
+                <option value="romance">Romance</option>
+            </select>
+
+            <!-- Alberto viene con javaScript-->
+            <button class="search-button" type="button">Buscar por categorias</button>
+        </div>
+    </section>
+
+    <!-- estructura del contenido ppal rejilla libros-->
+    <main class="container">
+        <h2 class="section-title">Recomendados</h2>
+
+        <section class="book-grid">
+            <!-- Libro 1-->
+            <article class="book-card">
+                <img class="book-cover"
+                    src="portadas/elseñordelosanillos.jpeg"
+                    alt="Portada o foto representativa del libro 1"/>
+
+                <div class="book-info">
+                    <h3 class="book-title">El señor de los anillos</h3>
+                    <p class="book-autor">J.R.R Tolkien</p>
+                    <p class="book-category">Fantasía</p>
+                </div>
+            </article>
+
+            <!-- Libro 2-->
+            <article class="book-card">
+                <img class="book-cover"
+                    src="portadas/elnombredelviento.jpeg"
+                    alt="Portada o foto representativa del libro 1"/>
+
+                <div class="book-info">
+                    <h3 class="book-title">El nombre del viento</h3>
+                    <p class="book-autor">Patrick Rothfuss</p>
+                    <p class="book-category">Fantasía</p>
+                </div>
+            </article>
+
+            <!-- Libro 3-->
+            <article class="book-card">
+                <img class="book-cover"
+                    src="portadas/fahrenheit451.png"
+                    alt="Portada o foto representativa del libro 1"/>
+
+                <div class="book-info">
+                    <h3 class="book-title">Fahrenheit 451</h3>
+                    <p class="book-autor">Ray Bradbury</p>
+                    <p class="book-category">Ciencia ficción</p>
+                </div>
+            </article>
+
+            <!-- Libro 4-->
+            <article class="book-card">
+                <img class="book-cover"
+                    src="portadas/lospilaresdelaTierra.jpeg"
+                    alt="Portada o foto representativa del libro 1"/>
+
+                <div class="book-info">
+                    <h3 class="book-title">Los pilares de la Tierra</h3>
+                    <p class="book-autor">Ken Follett</p>
+                    <p class="book-category">Historia</p>
+                </div>
+            </article>
+
+            <!-- Libro 5-->
+            <article class="book-card">
+                <img class="book-cover"
+                    src="portadas/bajolamismaestrella.png"
+                    alt="Portada o foto representativa del libro 1"/>
+
+                <div class="book-info">
+                    <h3 class="book-title">Bajo la misma estrella</h3>
+                    <p class="book-autor">John Green</p>
+                    <p class="book-category">Juvenil</p>
+                </div>
+            </article>
+
+            <!-- Libro 6-->
+            <article class="book-card">
+                <img class="book-cover"
+                    src="portadas/orgulloyprejuicio.jpeg"
+                    alt="Portada o foto representativa del libro 1"/>
+
+                <div class="book-info">
+                    <h3 class="book-title">Orgullo y prejuicio</h3>
+                    <p class="book-autor">Jane Austen</p>
+                    <p class="book-category">Romance</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p> Trabajo de Lenguaje de Marca - Centro San Valero</p>
+            <p>LIDIA ROJO | Curso: 1SI</p>
+        </div>
+    </footer>
+
+</body>
+</html>

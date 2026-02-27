@@ -1,0 +1,141 @@
+/* estilo base. AFECTA A TODA LA PÁGINA */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background-color: #f6f7fb;
+    color: #1f2937;
+}
+
+/* contenedor reutilizable */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Header obligatorio */
+.site-header{
+    background-color: #0b5aa7;
+    color: #ffffff;
+    padding: 28px 0;
+}
+
+/* titulo */
+.site-title{
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+}
+
+/* subtitulo */
+.site-subtitle{
+    margin: 6px 0 0 ;
+    opacity: 0.9;
+}
+
+/* barra de busqueda */
+.search-bar{
+    padding: 18px 0 10px;
+}
+
+.container search-inner{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-label{
+    font-weight: 600;
+}
+
+.search-select{
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #ffffff;
+    min-width: 200px;
+}
+
+.search-button{
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 999px;
+    background-color: #0b5aa7;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color: #094a86;
+    filter: brightness(0.95);
+}
+
+/* seccion contenido rejilla */
+.section-title{
+    margin: 22px 0 12px;
+    font-size: 22px;
+}
+
+.book-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding-bottom: 28px;
+}
+
+.book-card{
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.book-cover{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.book-info{
+    padding: 14px;
+}
+
+.book-author{
+    margin: 0;
+    opacity: 0.85;
+}
+
+.book-category{
+    margin: 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+@media (max-width: 900px){
+    .book-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .book-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.site-footer{
+    background: #111827;
+    color: #ffffff;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.site-footer p{
+    margin: 6px 0;
+    opacity: 0.9;
+}
