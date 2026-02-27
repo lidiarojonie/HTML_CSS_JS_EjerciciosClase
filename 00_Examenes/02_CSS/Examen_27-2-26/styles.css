@@ -1,0 +1,247 @@
+/* ============================= */
+/* RESET BÁSICO */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    color: #1f2937;
+}
+  
+img {
+    max-width: 100%;
+    display: block;
+}
+  
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+  
+  
+/* ============================= */
+/* CABECERA */
+/* Debe contener:
+    - Fondo blanco
+    - Línea inferior gris (border-bottom)
+    - Contenido en horizontal (flex)
+    - Espaciado vertical
+*/
+/* ============================= */
+
+#cabecera {
+    background: white;
+    border-bottom: 5rem;
+}
+
+#cabecera-contenido {
+    display: flex;
+    justify-content: auto;
+    align-items: center;
+    padding: 0, 5rem;
+    gap: 60%;
+}
+  
+/* Nombre "Montse Morales"
+    - Color azul
+    - Fondo azul claro
+    - Bordes redondeados
+    - Padding interior
+*/
+
+#nombre-alumno {
+    font-weight: bold;
+    color: blue;
+    background: rgb(204, 235, 245);
+    padding: 0.4rem;
+    border-radius: 5rem;
+}
+  
+/* Nombre empresa */
+#nombre-empresa {
+    font-weight: bold;
+}
+  
+  
+/* ============================= */
+/* HERO */
+/* Debe contener:
+    - Fondo degradado o color suave
+    - Espaciado vertical
+    - Texto e imagen en columnas (grid)
+*/
+/* ============================= */
+  
+#hero {
+    background: linear-gradient(200grad, rgb(204, 235, 245) 0%, white 100%);
+    padding: 2rem;
+}
+  
+#hero-contenido {
+    display: flex;
+    grid-template-columns: ____________________;
+    gap: ____________________;
+    align-items: ____________________;
+}
+  
+#hero-texto h1 {
+    font-size: ____________________;
+    margin-bottom: ____________________;
+}
+  
+#hero-texto p {
+    color: ____________________;
+}
+  
+/* Imagen con:
+    - Bordes redondeados
+    - Sombra */
+
+#hero-imagen img {
+    border-radius: 2rem;
+    box-shadow: 10%;
+}
+  
+  
+/* ============================= */
+/* SECCIÓN HORARIOS */
+/* Debe tener:
+    - Fondo gris claro
+    - Espaciado vertical
+*/
+/* ============================= */
+  
+.seccion-gris {
+    background: rgb(214, 214, 214);
+    padding: 2rem;
+}
+  
+  
+/* ============================= */
+/* TABLA */
+/* Debe contener:
+    - Fondo blanco
+    - Bordes redondeados
+    - Borde gris
+*/
+/* ============================= */
+  
+#tabla-horarios {
+    background: white;
+    border: 10rem;
+    border-radius: 1rem;
+    overflow-x: auto;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 0.5rem;
+    border-bottom: 2px;
+    text-align: left;
+}
+  
+/* Encabezado azul con texto blanco */
+thead th {
+    background: blue;
+    color: white;
+    font-weight: bold;
+}
+  
+  
+/* ============================= */
+/* FORMULARIO */
+/* Debe contener:
+    - Fondo blanco
+    - Borde gris
+    - Bordes redondeados
+    - Sombra ligera
+*/
+/* ============================= */
+  
+#formulario-inscripcion {
+    background: white;
+    border: 10rem;
+    border-radius: 1rem;
+    padding: ____________________;
+    box-shadow: ____________________;
+}
+  
+#formulario-grid {
+    display: ____________________;
+    grid-template-columns: ____________________;
+    gap: ____________________;
+}
+  
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+  
+.campo input {
+    width: 100%;
+    padding: ____________________;
+    border: ____________________;
+    border-radius: ____________________;
+}
+  
+/* Botón azul con texto blanco */
+button {
+    background: ____________________;
+    color: ____________________;
+    border: none;
+    padding: ____________________;
+    border-radius: ____________________;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+
+/* ============================= */
+/* FOOTER */
+/* Debe contener:
+    - Fondo oscuro
+    - Texto claro
+    - 3 columnas (grid)
+*/
+/* ============================= */
+  
+#pie {
+    background: rgb(2, 2, 48);
+    color: white;
+    padding-top: 1rem;
+}
+  
+#pie-grid {
+    display: flex;
+    grid-template-columns: ____________________;
+    gap: 20%;
+    padding-bottom: ____________________;
+}
+  
+#pie-copy {
+    border-top: ____________________;
+    padding: ____________________;
+    font-size: 13px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .hero__grid { grid-template-columns: 1fr; }
+    .pie__grid { grid-template-columns: 1fr; }
+  }
+  
+  
+  @media (max-width: 560px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .cabecera__contenido { flex-direction: column; gap: 10px; align-items: flex-start; }
+  }

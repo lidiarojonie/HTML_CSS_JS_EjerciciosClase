@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitZone - Centro Deportivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+  <header id="cabezera">
+    <div class="contenedor" id="cabecera-contenido">
+      <p id="nombre-alumno">Lidia Rojo</p>
+      <p id="nombre-empresa">FITZONE - Centro Deportivo SAN VALERO</p>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="contenedor" id="hero-contenido">
+
+      <div id="hero-texto">
+        <h1>Entrena y cuida tu salud</h1>
+
+        <p>
+          En FitZone encontrarás clases para todos los niveles y un ambiente motivador.
+          Elige tu actividad y empieza a mejorar desde hoy.
+        </p>
+
+        <ul>
+          <li>Clases dirigidas (Yoga, Spinning, Funcional)</li>
+          <li>Zona cardio y musculación</li>
+          <li>Entrenadores para ayudarte</li>
+        </ul>
+      </div>
+
+      <div id="hero-imagen">
+        <img src="img/gymm.jpg" alt="Gimnasio FitZone">
+      </div>
+
+    </div>
+  </section>
+
+  <main>
+
+    <!-- HORARIOS -->
+    <section id="horarios" class="seccion-gris">
+      <div class="contenedor">
+        <h2>Horarios</h2>
+        <p class="texto-suave">Consulta las clases dirigidas disponibles.</p>
+
+        <div id="tabla-horarios">
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Miercoles</th>
+                <th>Viernes</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>09:00 - 10:00</td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>Funcional</td>
+              </tr>
+
+              <tr>
+                <td>18:00 - 19:00</td>
+                <td>Funcional</td>
+                <td>Box Fitness</td>
+                <td>Spinning</td>
+              </tr>
+
+              <tr>
+                <td>19:30 - 20:30</td>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Box Fitness</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="nota">* Horario orientativo para el examen.</p>
+      </div>
+    </section>
+
+    <!-- INSCRIPCIÓN -->
+    <section id="formulario">
+      <div class="contenedor">
+        <h2>Inscripción</h2>
+        <p class="texto-suave">Rellena tus datos y envía la inscripción.</p>
+
+        <form id="formulario-inscripcion" action="#" method="post">
+          <div id="formulario-grid">
+
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Ej: Montse" required>
+            </div>
+
+            <div class="campo">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Ej: montse@gmail.com" required>
+            </div>
+
+            <div class="campo" id="acciones-formulario">
+              <button type="submit">Enviar Inscripcion</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="pie">
+    <div class="contenedor" id="pie-grid">
+      <div>
+        <h3>FitZone</h3>
+        <p class="pie-texto">Centro Deportivo - Zaragoza</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p class="pie-texto">📍 Calle Ejemplo, 12</p>
+        <p class="pie-texto">📞 976 000 000</p>
+        <p class="pie-texto">✉️ info@fitzone.com</p>
+      </div>
+
+      <div>
+        <h4>Enlaces</h4>
+        <ul id="pie-enlaces">
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#inscripcion">Inscripción</a></li>
+          <li><a href="#pie">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="pie-copy">
+      <div class="contenedor">
+        <p>© 2026 FitZone. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
